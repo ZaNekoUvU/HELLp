@@ -4,10 +4,18 @@ public class BossMovement : MonoBehaviour
 {
     public DetectionZone attackZone;
     [SerializeField] float moveSpeed = 10f;
+<<<<<<< Updated upstream
     Animator animator;
+=======
+    [SerializeField] private float turnDelay = 5f;
 
+    Animator bossAnimator;
+>>>>>>> Stashed changes
 
     private bool movingLeft = true;
+    private bool waitingTurn = false;
+    private float turnTimer = 0f;
+
     private bool _hasTarget = false;
     private bool _isHurting = false;
 
@@ -38,13 +46,29 @@ public class BossMovement : MonoBehaviour
 
     void Update()
     {
-        if (movingLeft)
+        if (waitingTurn)
         {
-            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+            turnTimer = Time.deltaTime;
+
+            if (turnTimer >= turnDelay)
+            {
+                movingLeft = !movingLeft;
+                waitingTurn = false;
+                turnTimer = 0f;
+            }
+
+            return;
         }
-        else
+        if (turnTimer == 0)
         {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            if (movingLeft)
+            {
+                transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            }
         }
 
         HasTarget = attackZone.detectedColliders.Count > 0;
