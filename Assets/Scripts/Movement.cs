@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float jumpPower = 7f;
+
     private int jump = 0;
     private bool isGrounded = false;
     [SerializeField] private float airSpeed = 5f;
@@ -29,7 +31,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jump > 0)
         {
-            rb.AddForce(Vector2.up * speed, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             jump--;
 
             isGrounded = false;
