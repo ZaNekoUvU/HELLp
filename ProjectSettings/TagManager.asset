@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Interactible
+  - Enemy
   - Ground
   layers:
   - Default
