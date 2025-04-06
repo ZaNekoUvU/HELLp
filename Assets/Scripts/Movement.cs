@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
         {
             horizontalInput = 1;
 
-            if (!isGrounded && airSpeed > 0 )
+            if (!isGrounded && airSpeed > 0)
             {
 
                 horizontalInput *= airSpeed / speed; // use airSpeed when not grounded
