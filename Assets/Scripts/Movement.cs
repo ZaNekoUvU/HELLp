@@ -79,10 +79,11 @@ public class PlayerMovement : MonoBehaviour
             jump--;
 
             isGrounded = false;
+            IsJumping = true;
         }
 
         if (isGrounded)
-        { IsJumping = true; }
+        { IsJumping = false; }
 
         rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
     }
