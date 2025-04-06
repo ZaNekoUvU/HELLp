@@ -19,7 +19,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         
     }
