@@ -4,7 +4,7 @@ public class BossMovement : MonoBehaviour
 {
     public DetectionZone attackZone;
     [SerializeField] float moveSpeed = 10f;
-    Animator animator;
+    Animator bossAnimator;
 
 
     private bool movingLeft = true;
@@ -13,7 +13,7 @@ public class BossMovement : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        bossAnimator = GetComponent<Animator>();
     }
 
     public bool HasTarget
@@ -22,7 +22,7 @@ public class BossMovement : MonoBehaviour
         private set
         {
             _hasTarget = value;
-            animator.SetBool("HasTarget", value);
+            bossAnimator.SetBool("HasTarget", value);
         }
     }
 
