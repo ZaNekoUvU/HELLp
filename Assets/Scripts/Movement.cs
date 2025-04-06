@@ -3,8 +3,8 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
-    [SerializeField] private int jump = 0;
-    [SerializeField] private bool isGrounded = false;
+    private int jump = 0;
+    private bool isGrounded = false;
     [SerializeField] private float airSpeed = 5f;
     private Rigidbody2D rb;
 
