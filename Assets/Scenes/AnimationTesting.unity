@@ -182,15 +182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1376685045072451205, guid: ba477db4561a059459a4828d0053169e, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7017951321261052864, guid: ba477db4561a059459a4828d0053169e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2070354380}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba477db4561a059459a4828d0053169e, type: 3}
 --- !u!1 &247734302
 GameObject:
@@ -597,25 +592,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1273796549 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2431048904520584642, guid: 1a970a0e7de392049b9d2f9661c33616,
-    type: 3}
-  m_PrefabInstance: {fileID: 1740163409}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1273796556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273796549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eef7dd0640e31af4ca86bac6516e3651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
 --- !u!1 &1357648112
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,15 +747,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4873388572329918929, guid: 1a970a0e7de392049b9d2f9661c33616, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2431048904520584642, guid: 1a970a0e7de392049b9d2f9661c33616,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1273796556}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a970a0e7de392049b9d2f9661c33616, type: 3}
 --- !u!1 &1790913960
 GameObject:
@@ -929,11 +900,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flying Eye
       objectReference: {fileID: 0}
-    - target: {fileID: 7776645586910212169, guid: a516a1027a4317745bb3b00f3e706fe7,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.19
-      objectReference: {fileID: 0}
     - target: {fileID: 8861055393841084299, guid: a516a1027a4317745bb3b00f3e706fe7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -989,25 +955,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a516a1027a4317745bb3b00f3e706fe7, type: 3}
---- !u!1 &2070354373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7017951321261052864, guid: ba477db4561a059459a4828d0053169e,
-    type: 3}
-  m_PrefabInstance: {fileID: 211817505}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2070354380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070354373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a61541d08da37574e98d64becf7872c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

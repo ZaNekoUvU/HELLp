@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3069159979052508981}
   - component: {fileID: 25765219291918088}
   - component: {fileID: 5989402240733402694}
-  - component: {fileID: 1376685045072451205}
+  - component: {fileID: 1757060705541732736}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7017951321261052864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0055594, y: -2.5871236, z: 0}
+  m_LocalPosition: {x: 21.200586, y: -54.001434, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -186,7 +186,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.06676984, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &1376685045072451205
+--- !u!114 &1757060705541732736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7017951321261052864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1be8238a99fbc2f448c30899d4645074, type: 3}
+  m_Script: {fileID: 11500000, guid: a61541d08da37574e98d64becf7872c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
