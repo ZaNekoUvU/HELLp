@@ -18,26 +18,26 @@ public class Movement : MonoBehaviour
         float horizontalInput = 0;
 
         horizontalInput = 0;
-        if (Input.GetKey(KeyCode.A) && airSpeed > 0)
+        if (Input.GetKey(KeyCode.A))
         {
             horizontalInput = -1;
 
-            if (!isGrounded && airSpeed > 0)
-            {
-                horizontalInput *= airSpeed / speed; // use airSpeed when not grounded
-                airSpeed -= 0.04f;
-            }
+            //if (!isGrounded && airSpeed > 0)
+            //{
+            //    horizontalInput *= airSpeed / speed; // use airSpeed when not grounded
+            //    airSpeed -= 0.04f;
+            //}
         }
         else if (Input.GetKey(KeyCode.D) && airSpeed > 0)
         {
             horizontalInput = 1;
 
-            if (!isGrounded && airSpeed > 0)
-            {
+            //if (!isGrounded && airSpeed > 0)
+            //{
 
-                horizontalInput *= airSpeed / speed; // use airSpeed when not grounded
-                airSpeed -= 0.04f;
-            }
+            //    horizontalInput *= airSpeed / speed; // use airSpeed when not grounded
+            //    airSpeed -= 0.04f;
+            //}
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && jump > 0)
@@ -47,15 +47,15 @@ public class Movement : MonoBehaviour
 
             isGrounded = false;
 
-            if (!isGrounded)
-            {
-                airSpeed += 5f;
+            //if (!isGrounded)
+            //{
+            //    airSpeed += 5f;
 
-                if (airSpeed > 10f)
-                {
-                    airSpeed = 10f;
-                }
-            }
+            //    if (airSpeed > 10f)
+            //    {
+            //        airSpeed = 10f;
+            //    }
+            //}
         }
 
         rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
@@ -69,7 +69,7 @@ public class Movement : MonoBehaviour
 
             isGrounded = true;
 
-            airSpeed = 10f;
+            //airSpeed = 10f;
         }
     }
 }
