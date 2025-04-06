@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private float playerAttack = 10f;
+    [SerializeField] private GameObject halo;
+    [SerializeField] private float speed = 10f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,20 +14,15 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Input.mousePosition);
-
         if (Input.GetMouseButtonDown(0))
         {
+            var go = Instantiate(halo, transform.position, Quaternion.identity);
 
-        }
-    }
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 direction = mousePosition - new Vector2(transform.position.x, transform.position.y);
+            direction.Normalize();
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-        if (Input.GetMouseButton(1))
-        {
-            GameObject.FindGameObjectWithTag("Enemy").GetComponent<Health>().TakeDamage(playerAttack);
+            go.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(direction.x, direction.y) * speed;
         }
     }
 }
