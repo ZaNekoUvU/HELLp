@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7039265751686538511}
   - component: {fileID: -2685985596086238039}
   - component: {fileID: 7132439780732411361}
-  - component: {fileID: 5269356452924109338}
   - component: {fileID: 3878583174877471142}
   - component: {fileID: 2501404735253679187}
   - component: {fileID: -1611126881703702905}
+  - component: {fileID: 1088995284622973513}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -190,20 +190,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.053890705, y: 0.48}
   m_EdgeRadius: 0
---- !u!114 &5269356452924109338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2431048904520584642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eef7dd0640e31af4ca86bac6516e3651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  damageSound: {fileID: -1611126881703702905}
 --- !u!61 &3878583174877471142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -362,6 +348,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1088995284622973513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2431048904520584642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010d258cda8ae9c4b9aa0e3b35662351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  damageSound: {fileID: -1611126881703702905}
 --- !u!1 &5506996163677144026
 GameObject:
   m_ObjectHideFlags: 0

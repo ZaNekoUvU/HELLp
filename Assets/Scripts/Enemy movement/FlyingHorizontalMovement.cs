@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class EnemyPatrolHorizontalRight : MonoBehaviour
+public class FlyingHorizontalMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
 
-    private bool movingRight = true;
+    private bool movingLeft = true;
 
     public AudioSource damageSound;
 
@@ -16,25 +16,19 @@ public class EnemyPatrolHorizontalRight : MonoBehaviour
 
     void Update()
     {
-        if (movingRight)
-        {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-        }
-        else
+        if (movingLeft)
         {
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
         }
+        else
+        {
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        }
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    movingRight = !movingRight;
-    //    Flip();
-    //}
-
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        movingRight = !movingRight;
+        movingLeft = !movingLeft;
         Flip();
     }
 
@@ -47,7 +41,7 @@ public class EnemyPatrolHorizontalRight : MonoBehaviour
             Health playerHealth = collision.gameObject.GetComponent<Health>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(20f); 
+                playerHealth.TakeDamage(20f);
             }
         }
     }
@@ -55,7 +49,7 @@ public class EnemyPatrolHorizontalRight : MonoBehaviour
     private void Flip()
     {
         Vector3 localScale = transform.localScale;
-        localScale.x *= -1; 
+        localScale.x *= -1;
         transform.localScale = localScale;
     }
 }
