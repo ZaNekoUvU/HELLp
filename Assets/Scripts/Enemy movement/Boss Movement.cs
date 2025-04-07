@@ -26,34 +26,42 @@ public class BossMovement : MonoBehaviour
         }
     }
 
-    /*public bool IsHurting
+    public bool IsHurting
     {
         get { return _isHurting; }
         private set
         {
             _isHurting = value;
-            animator.SetBool("IsHurting", value);
+            bossAnimator.SetBool("IsHurting", value);
         }
-    }*/
+    }
 
     void Update()
     {
-        if (movingLeft)
+        if (!HasTarget)
         {
-            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+            if (movingLeft)
+            {
+                transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            }
         }
-        else
-        {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-        }
+
 
         HasTarget = attackZone.detectedColliders.Count > 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        movingLeft = !movingLeft;
-        Flip();
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            movingLeft = !movingLeft;
+            Flip();
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -71,7 +79,16 @@ public class BossMovement : MonoBehaviour
     private void Flip()
     {
         Vector3 localScale = transform.localScale;
-        localScale.x *= -1; 
+        localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    private void Stop()
+    {
+        Vector3 currentPos = transform.position;
+        float tempX;
+        tempX = currentPos.x;
+
+
     }
 }

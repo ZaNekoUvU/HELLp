@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 423302184358025340}
   - component: {fileID: 8840465165541054980}
   - component: {fileID: -8184244603746744484}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Halo_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,20 +132,20 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 15159
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 15159
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1024
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 15159
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 1
@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5862835900901226923}
   - component: {fileID: 2289700676653927351}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Halo Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -21,6 +21,7 @@ public class HaloDamage : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(playerAttack);
+            Destroy(this.gameObject);
         }
         else if (collision.gameObject.layer != LayerMask.NameToLayer("Player"))
         {

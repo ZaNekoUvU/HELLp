@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Ground
   - SoulFragment
+  - Wall
   layers:
   - Default
   - TransparentFX
