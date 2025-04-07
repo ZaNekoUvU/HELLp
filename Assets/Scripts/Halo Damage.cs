@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HaloDamage : MonoBehaviour
 {
-    private float playerAttack = 10f;
+    private float playerAttack = 20f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

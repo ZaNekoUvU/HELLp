@@ -375,6 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   playerHealth: 0
+  lightIntensity: {fileID: 1443646563589041407}
 --- !u!114 &3097047140168814319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,4 +388,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf4c0a806fc4c446b1a0a67978daea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soul: 0
   boss: {fileID: 1510724590718170029, guid: afff3deba5e37304394640743280749f, type: 3}

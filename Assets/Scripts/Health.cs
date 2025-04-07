@@ -1,15 +1,23 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private float health = 100f;
-    [SerializeField] private float playerHealth ;
+    private float maxHealth;
+    [SerializeField] private float playerHealth = 100f;
+    [SerializeField] private Light2D lightIntensity;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        maxHealth = health;
+
+        if (lightIntensity == null)
+        {
+            lightIntensity = GetComponent<Light2D>();
+        }
     }
 
     // Update is called once per frame
@@ -24,6 +32,11 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Destroy(this.gameObject);
+        }
+
+        if (lightIntensity != null)
+        {
+            lightIntensity.intensity = Mathf.Clamp01(health);
         }
     }
 
