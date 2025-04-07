@@ -3,11 +3,13 @@ using UnityEngine;
 public class SoulPickup : MonoBehaviour
 {
     [SerializeField] private int soul;
-    [SerializeField] private GameObject boss;
+    [SerializeField] private GameObject bossPrefab;
+    private GameObject boss;
+    private bool bossDead = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -15,11 +17,11 @@ public class SoulPickup : MonoBehaviour
     {
         if (soul >= 10)
         {
-            if (GameObject.Find("Boss") == null)
+            if (boss == null && bossDead)
             {
-                boss = Instantiate(boss);
+                boss = Instantiate(bossPrefab);
                 boss.transform.position = GameObject.Find("Boss Spawner").transform.position;
-
+                bossDead = false;
             }
         }
     }
