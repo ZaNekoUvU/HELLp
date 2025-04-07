@@ -3,8 +3,7 @@ using UnityEngine;
 public class SoulPickup : MonoBehaviour
 {
     [SerializeField] private int soul;
-    [SerializeField] private GameObject bossPrefab;
-    private GameObject boss;
+    [SerializeField] private GameObject boss;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,10 +15,11 @@ public class SoulPickup : MonoBehaviour
     {
         if (soul >= 10)
         {
-            if (boss == null)
+            if (GameObject.Find("Boss") == null)
             {
-                boss = Instantiate(bossPrefab);
+                boss = Instantiate(boss);
                 boss.transform.position = GameObject.Find("Boss Spawner").transform.position;
+
             }
         }
     }
