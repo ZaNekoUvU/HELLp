@@ -221,7 +221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Jan Daniel Verwey \n- Lead Concept Designer\n- Narrative\n- Analyser\n-
-    Document Helper\n- Cool guy (handsome)"
+    Document Helper\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
