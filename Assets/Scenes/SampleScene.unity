@@ -478,6 +478,7 @@ BoxCollider2D:
   m_Size: {x: 2.2, y: 0.49806482}
   m_EdgeRadius: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &142940566
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +616,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 142940566}
   m_CullTransparentMesh: 1
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &171719483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -733,6 +736,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169854310f6f2cf49a979521a90dc8a8, type: 3}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &253945004
 GameObject:
@@ -5623,4 +5629,7 @@ SceneRoots:
   - {fileID: 555704556}
   - {fileID: 705088989}
   - {fileID: 171719483}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
