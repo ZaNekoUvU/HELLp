@@ -477,6 +477,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.2, y: 0.49806482}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!1 &142940566
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +614,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142940566}
   m_CullTransparentMesh: 1
+=======
+--- !u!1001 &171719483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2296667833962395660, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_Name
+      value: TutorialCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 405.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 254
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 202.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 126.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6622209303792604913, guid: 169854310f6f2cf49a979521a90dc8a8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 169854310f6f2cf49a979521a90dc8a8, type: 3}
+>>>>>>> Stashed changes
 --- !u!1 &253945004
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,12 +1067,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
+  m_Sprite: {fileID: -1955448553306655712, guid: fde3ea61900d39843b15eef0ea9b1d59,
     type: 3}
   m_Color: {r: 0.16037738, g: 0.13389999, b: 0.13389999, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 2
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -1426,6 +1547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf4c0a806fc4c446b1a0a67978daea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soul: 0
+  boss: {fileID: 0}
 --- !u!212 &589849851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4166,6 +4289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf4c0a806fc4c446b1a0a67978daea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soul: 0
+  boss: {fileID: 0}
 --- !u!212 &1876748341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5469,6 +5594,7 @@ SceneRoots:
   - {fileID: 843432752}
   - {fileID: 1570807676}
   - {fileID: 1931619736}
+<<<<<<< Updated upstream
   - {fileID: 310098652}
   - {fileID: 1224242967}
   - {fileID: 1286121363}
@@ -5478,3 +5604,23 @@ SceneRoots:
   - {fileID: 342932842}
   - {fileID: 896271170}
   - {fileID: 441280815}
+=======
+  - {fileID: 281118572733451946}
+  - {fileID: 950124921}
+  - {fileID: 1156930950}
+  - {fileID: 1470797128}
+  - {fileID: 819566103}
+  - {fileID: 705352797}
+  - {fileID: 2055026213}
+  - {fileID: 911882709}
+  - {fileID: 1475982869}
+  - {fileID: 1974772349}
+  - {fileID: 2100224862}
+  - {fileID: 1775792047}
+  - {fileID: 595472857}
+  - {fileID: 1237209226}
+  - {fileID: 1876336586}
+  - {fileID: 555704556}
+  - {fileID: 705088989}
+  - {fileID: 171719483}
+>>>>>>> Stashed changes
