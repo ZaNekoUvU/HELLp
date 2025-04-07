@@ -1904,7 +1904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soul: 0
-  boss: {fileID: 0}
+  bossPrefab: {fileID: 0}
 --- !u!212 &589849851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2747,8 +2747,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278209023
+  m_fontColor: {r: 1, g: 0.28627452, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3804,8 +3804,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 524.9385, y: 260.35687}
-  m_SizeDelta: {x: 58.1229, y: 41.5022}
+  m_AnchoredPosition: {x: 503.37122, y: 260.35687}
+  m_SizeDelta: {x: 101.2572, y: 41.5022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065639998
 MonoBehaviour:
@@ -3883,8 +3883,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -676757828979037212, guid: 6ed07fff9abbd9d4985a46a96d212d76,
+    type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6578,7 +6579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soul: 0
-  boss: {fileID: 0}
+  bossPrefab: {fileID: 0}
 --- !u!212 &1876748341
 SpriteRenderer:
   m_ObjectHideFlags: 0
