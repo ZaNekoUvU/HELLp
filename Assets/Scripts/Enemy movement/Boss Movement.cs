@@ -11,11 +11,13 @@ public class BossMovement : MonoBehaviour
     private bool _hasTarget = false;
     private bool _isHurting = false;
 
+    public AudioSource damageSound;
+
     private void Awake()
     {
         bossAnimator = GetComponent<Animator>();
+        damageSound = GetComponent<AudioSource>();
     }
-
     public bool HasTarget
     {
         get { return _hasTarget; }
@@ -68,6 +70,8 @@ public class BossMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            damageSound.Play();
+
             Health playerHealth = collision.gameObject.GetComponent<Health>();
             if (playerHealth != null)
             {

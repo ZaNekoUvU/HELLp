@@ -6,6 +6,14 @@ public class EnemyPatrolHorizontalLeft : MonoBehaviour
 
     private bool movingLeft = true;
 
+    public AudioSource damageSound;
+
+    private void Start()
+    {
+        damageSound = GetComponent<AudioSource>();
+
+    }
+
     void Update()
     {
         if (movingLeft)
@@ -28,6 +36,8 @@ public class EnemyPatrolHorizontalLeft : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            damageSound.Play();
+
             Health playerHealth = collision.gameObject.GetComponent<Health>();
             if (playerHealth != null)
             {

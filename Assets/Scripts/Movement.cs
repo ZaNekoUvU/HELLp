@@ -15,9 +15,12 @@ public class PlayerMovement : MonoBehaviour
     private bool _isMoving = false;
     private bool _isJumping = false;
 
+    //public AudioSource jumpSound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        //jumpSound = GetComponent<AudioSource>();
     }
 
     public bool IsMoving
@@ -80,6 +83,11 @@ public class PlayerMovement : MonoBehaviour
 
             isGrounded = false;
             IsJumping = true;
+
+            //if (isGrounded == false & IsJumping == true)
+            //{
+            //    jumpSound.Play();
+            //}
         }
 
         if (isGrounded)

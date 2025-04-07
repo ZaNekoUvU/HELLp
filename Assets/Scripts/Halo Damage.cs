@@ -25,6 +25,7 @@ public class HaloDamage : MonoBehaviour
         }
         else if (collision.gameObject.layer != LayerMask.NameToLayer("Player"))
         {
+
             Destroy(this.gameObject);
         }
     }

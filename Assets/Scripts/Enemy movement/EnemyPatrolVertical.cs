@@ -6,6 +6,13 @@ public class EnemyPatrolVertical : MonoBehaviour
 
     private bool movingUp = true;
 
+    public AudioSource damageSound;
+
+    private void Start()
+    {
+        damageSound = GetComponent<AudioSource>();
+
+    }
     void Update()
     {
         if (movingUp)
@@ -28,6 +35,8 @@ public class EnemyPatrolVertical : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            damageSound.Play();
+
             Health playerHealth = collision.gameObject.GetComponent<Health>();
             if (playerHealth != null)
             {

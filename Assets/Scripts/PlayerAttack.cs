@@ -5,10 +5,11 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject halo;
     [SerializeField] private float speed = 10f;
 
+    public AudioSource swishSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        swishSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -16,6 +17,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            swishSound.Play();
             var go = Instantiate(halo, transform.position, Quaternion.identity);
 
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
