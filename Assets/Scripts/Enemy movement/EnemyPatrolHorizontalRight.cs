@@ -24,10 +24,22 @@ public class EnemyPatrolHorizontalReft : MonoBehaviour
         Flip();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Health playerHealth = collision.gameObject.GetComponent<Health>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(20f); 
+            }
+        }
+    }
+
     private void Flip()
     {
         Vector3 localScale = transform.localScale;
-        localScale.x *= -1; // Flip X
+        localScale.x *= -1; 
         transform.localScale = localScale;
     }
 }
