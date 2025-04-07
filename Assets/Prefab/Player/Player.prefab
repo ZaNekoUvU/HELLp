@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 1431999857183407270}
   - component: {fileID: 865986287999364925}
   - component: {fileID: 3097047140168814319}
+  - component: {fileID: 9013178402445999476}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -387,4 +388,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf4c0a806fc4c446b1a0a67978daea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soul: 0
   boss: {fileID: 1510724590718170029, guid: afff3deba5e37304394640743280749f, type: 3}
+--- !u!114 &9013178402445999476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984807024717472472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab32487895c4f99479b9e4fda59a16f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  halo: {fileID: 4468898777971721824, guid: 4c75e3b6eee8b1446bebc8bacd92b686, type: 3}
+  speed: 10
