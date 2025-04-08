@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882b8aa7e2ecc4d40a1224acdd0cbd69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 300
   playerHealth: 0
   lightIntensity: {fileID: 0}
 --- !u!82 &-7370785926250090493

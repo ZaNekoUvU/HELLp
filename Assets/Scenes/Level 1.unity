@@ -1139,6 +1139,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4704804728686149222, guid: ba477db4561a059459a4828d0053169e,
+        type: 3}
+      propertyPath: health
+      value: 160
+      objectReference: {fileID: 0}
     - target: {fileID: 5274077742914835646, guid: ba477db4561a059459a4828d0053169e,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1923,6 +1928,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4704804728686149222, guid: ba477db4561a059459a4828d0053169e,
+        type: 3}
+      propertyPath: health
+      value: 160
+      objectReference: {fileID: 0}
     - target: {fileID: 5274077742914835646, guid: ba477db4561a059459a4828d0053169e,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4007,6 +4017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2501404735253679187, guid: 1a970a0e7de392049b9d2f9661c33616,
+        type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4702287428841391889, guid: 1a970a0e7de392049b9d2f9661c33616,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5520,6 +5535,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1642628817342387717, guid: a516a1027a4317745bb3b00f3e706fe7,
+        type: 3}
+      propertyPath: health
+      value: 140
+      objectReference: {fileID: 0}
     - target: {fileID: 3062520851533135553, guid: a516a1027a4317745bb3b00f3e706fe7,
         type: 3}
       propertyPath: m_Constraints
